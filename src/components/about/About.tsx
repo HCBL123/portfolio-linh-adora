@@ -54,40 +54,22 @@ const About = () => {
           {/* first sentence */}
           <SmotionDiv>
             <p>
-              An avid technology believer{' '}
-              <br className='hidden xxsm:block xsm:hidden' /> who is{' '}
-              <br className='hidden xsm:block sm:hidden' /> continually
-              intrigued <br className='hidden lg:block' /> by{' '}
-              <br className='hidden xxsm:block xsm:hidden' /> the{' '}
-              <br className='hidden sm:block lg:hidden' />
-              immense potential <br className='hidden xsm:block sm:hidden' /> of
-              blockchain <br className='hidden xxsm:block xsm:hidden' /> and AI
-              can revolutionize the future.
+              These days, I'm diving deep into AI-powered healthcare{' '}
+              <br className='hidden xxsm:block xsm:hidden' /> solutions and{' '}
+              <br className='hidden xsm:block sm:hidden' /> environmental
+              <br className='hidden lg:block' /> sustainability.
             </p>
           </SmotionDiv>
 
           {/* @medium-device: second sentence */}
           <SmotionDiv className='hidden sm:block'>
             <p>
-              Through commitment to professionalism,{' '}
-              <span className='sm:hidden md:inline'>and </span>
-              <span className='hidden lg:inline'>focus on</span>{' '}
-              <span className='sm:hidden md:inline'>excellence,</span>
-              I am passionate <br className='hidden md:block lg:hidden' /> about{' '}
-              <br className='hidden lg:block' /> creating{' '}
-              <br className='hidden sm:block md:hidden lg:hidden' /> elegant and{' '}
-              <span className='lg:hidden'>agile</span>{' '}
-              <span
-                className='hidden lg:inline
-              '
-              >
-                efficient{' '}
-              </span>
-              solutions bringing novelty and comfort to{' '}
-              <span className='lg:hidden'>life.</span>{' '}
-              <span className='hidden lg:inline'>
-                all aspects of human life
-              </span>
+              From working on respiratory disease detection at USF to{' '}
+              <br className='hidden md:block lg:hidden' /> developing AquaEmi,{' '}
+              <br className='hidden lg:block' /> an AI-driven water quality{' '}
+              <br className='hidden sm:block md:hidden lg:hidden' /> monitoring system{' '}
+              for the Mekong River, I love using technology to create{' '}
+              <br className='hidden lg:block' /> solutions that help underserved communities.
             </p>
           </SmotionDiv>
 

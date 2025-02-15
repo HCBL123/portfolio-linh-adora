@@ -1,0 +1,14 @@
+.technology-icon {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.python { background-image: url('/images/technologies/python.svg'); }
+.jupyter { background-image: url('/images/technologies/jupyter.svg'); }
+.pandas { background-image: url('/images/technologies/pandas.svg'); }
+.mqtt { background-image: url('/images/technologies/mqtt.svg'); }
+.arduino { background-image: url('/images/technologies/arduino.svg'); }
+.esp32 { background-image: url('/images/technologies/esp32.svg'); }

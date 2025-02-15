@@ -45,8 +45,8 @@ const Intro = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className='text-primary font-extrabold flex gap-1 justify-center
-                    text-3xl
-                    sm:text-4xl'
+                    text-4xl
+                    sm:text-5xl'
             >
               Howdy,
               <SmotionSpan
@@ -58,7 +58,7 @@ const Intro = () => {
               >
                 👋
               </SmotionSpan>{' '}
-              It&apos;s Logan <span className='hidden xxsm:inline'>;)</span>
+                It&apos;s Gia Linh <span className='hidden xxsm:inline'>;)</span>
             </SmotionHeader>
             <SmotionHeader
               elementType='h2'
@@ -67,9 +67,9 @@ const Intro = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
               className='text-primary font-medium
-                    text-lg sm:text-xl'
+                    text-xl sm:text-2xl'
             >
-              (a.k.a. quiet-node)
+              (a.k.a. Linh Adora)
             </SmotionHeader>
           </div>
 
@@ -79,24 +79,24 @@ const Intro = () => {
             whileInView='shown'
             viewport={{ once: true }}
             variants={descriptionVariants}
-            className='text-lg sm:text-xl font-bold drop-shadow-xl'
+            className='text-xxxl sm:text-2xl font-bold drop-shadow-xl'
           >
             <SmotionDiv variants={descriptionVariants}>
-              Full Stack Software Developer.
+              Hi, I’m Gia Linh—a researcher, developer, and lifelong learner with a passion for blending technology and impact.
             </SmotionDiv>
-            <SmotionDiv variants={descriptionVariants}>
+            {/* <SmotionDiv variants={descriptionVariants}>
               Blockchain and Web 3.0 Enthusiast.
             </SmotionDiv>
             <SmotionDiv variants={descriptionVariants}>
               Innovating technology for a brighter future.
-            </SmotionDiv>
+            </SmotionDiv> */}
           </SmotionDiv>
         </div>
 
         {/* Social & Avatar */}
         <div className='flex flex-col'>
           {/* Social Medias */}
-          <div className='text-5xl flex flex-wrap justify-center gap-9 xxsm:gap-12 sm:gap-16 lg:gap-20 py-3 text-teal-600'>
+          <div className='text-6xl flex flex-wrap justify-center gap-9 xxsm:gap-12 sm:gap-16 lg:gap-20 py-3 text-teal-600'>
             <SmotionLink
               initial={{ opacity: 0, x: -21 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -164,14 +164,14 @@ const Intro = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.2, delay: 1.4 }}
               className={`rounded-full relative
-                        w-72 h-72
-                        sm:w-[19rem] sm:h-[19rem]
-                        lg:w-80 lg:h-80
-                        2xl:w-[21rem] 2xl:h-[21rem]`}
+                        w-80 h-80
+                        sm:w-[21rem] sm:h-[21rem]
+                        lg:w-96 lg:h-96
+                        2xl:w-[24rem] 2xl:h-[24rem]`}
             >
               <Image
                 className='absolute inset-0 w-full h-full object-center object-cover rounded-full select-none'
-                src={'/assets/avatars/profile_pic.png'}
+                src={'/assets/avatars/profile_pic.jpg'}
                 alt='quiet-node'
                 width={300}
                 height={300}

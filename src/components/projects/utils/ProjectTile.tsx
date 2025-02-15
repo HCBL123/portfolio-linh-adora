@@ -74,7 +74,7 @@ const ProjectTile = ({ project, flipped }: PapgeProps) => {
           {/* description */}
           <motion.p
             variants={verticalMoreSkills}
-            className={`text-lg leading-6 tracking-tight xmmd:leading-tight xmmd:tracking-tight font-semibold ${cssDesc}`}
+            className={`text-lg leading-6 tracking-tight xmmd:leading-tight xmmd:tracking-tight font-semibold ${cssDesc} whitespace-pre-line`}
           >
             {' '}
             {description}{' '}
@@ -121,6 +121,7 @@ const ProjectTile = ({ project, flipped }: PapgeProps) => {
                             width={43}
                             className={`hover:scale-125 scale transition duration-300 select-none`}
                           />
+                          <div className={`technology-icon ${tech.technology.toLowerCase()}`} />
                         </motion.a>
                       );
                     })}
@@ -160,6 +161,7 @@ const ProjectTile = ({ project, flipped }: PapgeProps) => {
                             width={43}
                             className={`hover:scale-125 scale transition duration-300 select-none`}
                           />
+                          <div className={`technology-icon ${tech.technology.toLowerCase()}`} />
                         </motion.a>
                       );
                     })}
@@ -200,6 +202,7 @@ const ProjectTile = ({ project, flipped }: PapgeProps) => {
                               width={43}
                               className={`hover:scale-125 scale transition duration-300 select-none`}
                             />
+                            <div className={`technology-icon ${tech.technology.toLowerCase()}`} />
                           </motion.a>
                         );
                       })}
@@ -239,6 +242,7 @@ const ProjectTile = ({ project, flipped }: PapgeProps) => {
                               width={43}
                               className={`hover:scale-125 scale transition duration-300 select-none`}
                             />
+                            <div className={`technology-icon ${tech.technology.toLowerCase()}`} />
                           </motion.a>
                         );
                       })}
@@ -246,6 +250,162 @@ const ProjectTile = ({ project, flipped }: PapgeProps) => {
                   </motion.div>
                 ),
               ]}
+
+              {/* hardwares */}
+              {(stacks.Hardwares?.length ?? 0) > 0 && (
+                <motion.div
+                  variants={verticalMoreSkills}
+                  key={'hardwares'}
+                  className='flex gap-1 items-center'
+                >
+                  <p className='font-bold text-base w-[5.5rem] xsm:w-24 xsm:text-lg sm:w-24'>
+                    Hardwares:{' '}
+                  </p>
+                  <div className='flex gap-1'>
+                    {(stacks.Hardwares ?? []).map((tech, key) => {
+                      return (
+                        <motion.a
+                          href={tech.techLink}
+                          key={key}
+                          target='_blank'
+                          title={tech.technology}
+                          variants={verticalMoreSkills}
+                          className='flex items-center cursor-pointer'
+                        >
+                          <motion.img
+                            whileHover={{
+                              x: [0, -80, 90, -80, 70, -60, 0],
+                              y: [0, -80, 70, -60, 0],
+                              transition: { duration: 0.5 },
+                            }}
+                            src={`assets/tech_logos/${tech.technology.toLowerCase()}.svg`}
+                            alt={`${tech}-logo`}
+                            width={43}
+                            className={`hover:scale-125 scale transition duration-300 select-none`}
+                          />
+                          <div className={`technology-icon ${tech.technology.toLowerCase()}`} />
+                        </motion.a>
+                      );
+                    })}
+                  </div>
+                </motion.div>
+              )}
+
+              {/* libraries */}
+              {(stacks.Libraries ?? []).length > 0 && (
+                <motion.div
+                  variants={verticalMoreSkills}
+                  key={'libraries'}
+                  className='flex gap-1 items-center'
+                >
+                  <p className='font-bold text-base w-[5.5rem] xsm:w-24 xsm:text-lg sm:w-24'>
+                    Libraries:{' '}
+                  </p>
+                  <div className='flex gap-1'>
+                    {stacks.Libraries?.map((tech, key) => {
+                      return (
+                        <motion.a
+                          href={tech.techLink}
+                          key={key}
+                          target='_blank'
+                          title={tech.technology}
+                          variants={verticalMoreSkills}
+                          className='flex items-center cursor-pointer'
+                        >
+                          <motion.img
+                            whileHover={{
+                              x: [0, -80, 90, -80, 70, -60, 0],
+                              y: [0, -80, 70, -60, 0],
+                              transition: { duration: 0.5 },
+                            }}
+                            src={`assets/tech_logos/${tech.technology.toLowerCase()}.svg`}
+                            alt={`${tech}-logo`}
+                            width={43}
+                            className={`hover:scale-125 scale transition duration-300 select-none`}
+                          />
+                          <div className={`technology-icon ${tech.technology.toLowerCase()}`} />
+                        </motion.a>
+                      );
+                    })}
+                  </div>
+                </motion.div>
+              )}
+
+              {/* models */}
+              {(stacks.Models ?? []).length > 0 && (
+                <motion.div
+                  variants={verticalMoreSkills}
+                  key={'models'}
+                  className='flex gap-1 items-center'
+                >
+                  <p className='font-bold text-base w-[5.5rem] xsm:w-24 xsm:text-lg sm:w-24'>
+                    Models:{' '}
+                  </p>
+                  <div className='flex gap-1'>
+                    {stacks.Models?.map((tech, key) => (
+                      <motion.a
+                        href={tech.techLink}
+                        key={key}
+                        target='_blank'
+                        title={tech.technology}
+                        variants={verticalMoreSkills}
+                        className='flex items-center cursor-pointer'
+                      >
+                        <motion.img
+                          whileHover={{
+                            x: [0, -80, 90, -80, 70, -60, 0],
+                            y: [0, -80, 70, -60, 0],
+                            transition: { duration: 0.5 },
+                          }}
+                          src={`assets/tech_logos/${tech.technology.toLowerCase()}.svg`}
+                          alt={`${tech}-logo`}
+                          width={43}
+                          className={`hover:scale-125 scale transition duration-300 select-none`}
+                        />
+                        <div className={`technology-icon ${tech.technology.toLowerCase()}`} />
+                      </motion.a>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+
+              {/* analytics */}
+              {(stacks.Analytics?.length ?? 0) > 0 && (
+                <motion.div
+                  variants={verticalMoreSkills}
+                  key={'analytics'}
+                  className='flex gap-1 items-center'
+                >
+                  <p className='font-bold text-base w-[5.5rem] xsm:w-24 xsm:text-lg sm:w-24'>
+                    Analytics:{' '}
+                  </p>
+                  <div className='flex gap-1'>
+                    {stacks.Analytics?.map((tech, key) => (
+                      <motion.a
+                        href={tech.techLink}
+                        key={key}
+                        target='_blank'
+                        title={tech.technology}
+                        variants={verticalMoreSkills}
+                        className='flex items-center cursor-pointer'
+                      >
+                        <motion.img
+                          whileHover={{
+                            x: [0, -80, 90, -80, 70, -60, 0],
+                            y: [0, -80, 70, -60, 0],
+                            transition: { duration: 0.5 },
+                          }}
+                          src={`assets/tech_logos/${tech.technology.toLowerCase()}.svg`}
+                          alt={`${tech}-logo`}
+                          width={43}
+                          className={`hover:scale-125 scale transition duration-300 select-none`}
+                        />
+                        <div className={`technology-icon ${tech.technology.toLowerCase()}`} />
+                      </motion.a>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
             </motion.div>
 
             {/* buttons */}
@@ -356,59 +516,61 @@ const ProjectTile = ({ project, flipped }: PapgeProps) => {
                 </motion.a>
               )}
 
-              {/* github */}
-              <motion.a
-                variants={verticalMoreSkills}
-                href={repoLink}
-                target='_blank'
-                className='cursor-pointer flex items-center w-fit'
-                onMouseEnter={() =>
-                  setHovering({
-                    ...hovering,
-                    github: true,
-                    live: false,
-                    demo: false,
-                  })
-                }
-                onMouseLeave={() =>
-                  setHovering({
-                    ...hovering,
-                    github: false,
-                    live: false,
-                    demo: false,
-                  })
-                }
-              >
-                <span className='flex flex-col items-center'>
-                  <p className=''>
-                    View source code{' '}
-                    <span className='hidden xxsm:inline sm:hidden md:inline'>
-                      {' '}
-                      on Github{' '}
-                    </span>
-                  </p>
-                  <motion.span
-                    animate={{ scaleX: hovering.github ? 1 : 0 }}
-                    transition={{ easings: true }}
-                  >
-                    <hr
-                      className={`${cssUnderline} border-none h-[0.2rem] w-6 sm:w-28 md:w-48 -mt-1 rounded-xl`}
-                    />
-                  </motion.span>
-                </span>
-
-                <motion.span
-                  animate={{ translateX: hovering.github ? 6 : 0 }}
-                  transition={{ easings: true }}
-                  className=' whitespace-nowrap'
+              {/* github - only show if repoLink exists */}
+              {repoLink !== '' && (
+                <motion.a
+                  variants={verticalMoreSkills}
+                  href={repoLink}
+                  target='_blank'
+                  className='cursor-pointer flex items-center w-fit'
+                  onMouseEnter={() =>
+                    setHovering({
+                      ...hovering,
+                      github: true,
+                      live: false,
+                      demo: false,
+                    })
+                  }
+                  onMouseLeave={() =>
+                    setHovering({
+                      ...hovering,
+                      github: false,
+                      live: false,
+                      demo: false,
+                    })
+                  }
                 >
-                  {hovering.github ? (
-                    <MdArrowForward size={24} />
-                  ) : (
-                    <MdKeyboardArrowRight size={24} />
-                  )}
-                </motion.span>
-              </motion.a>
+                  <span className='flex flex-col items-center'>
+                    <p className=''>
+                      View source code{' '}
+                      <span className='hidden xxsm:inline sm:hidden md:inline'>
+                        {' '}
+                        on Github{' '}
+                      </span>
+                    </p>
+                    <motion.span
+                      animate={{ scaleX: hovering.github ? 1 : 0 }}
+                      transition={{ easings: true }}
+                    >
+                      <hr
+                        className={`${cssUnderline} border-none h-[0.2rem] w-6 sm:w-28 md:w-48 -mt-1 rounded-xl`}
+                      />
+                    </motion.span>
+                  </span>
+
+                  <motion.span
+                    animate={{ translateX: hovering.github ? 6 : 0 }}
+                    transition={{ easings: true }}
+                    className=' whitespace-nowrap'
+                  >
+                    {hovering.github ? (
+                      <MdArrowForward size={24} />
+                    ) : (
+                      <MdKeyboardArrowRight size={24} />
+                    )}
+                  </motion.span>
+                </motion.a>
+              )}
             </motion.div>
           </div>
         </motion.div>

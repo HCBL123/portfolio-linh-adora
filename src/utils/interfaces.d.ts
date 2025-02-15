@@ -19,6 +19,10 @@ interface ProjectStack {
   BC: ProjectTechs[];
   BE: ProjectTechs[];
   Mobile: ProjectTechs[];
+  Libraries?: Technology[];
+  Hardwares?: Technology[];
+  Models?: Technology[];
+  Analytics?: Technology[];
 }
 
 interface Technology {

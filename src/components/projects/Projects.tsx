@@ -40,7 +40,7 @@ const Projects = () => {
             viewport={{ amount: 'some', margin: '100% 0% -8% 0%' }}
             className='text-3xl sm:text-4xl font-black text-[#9d5746]'
           >
-            Projects.
+            Projects & Achievements.
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, x: 90 }}
@@ -49,7 +49,7 @@ const Projects = () => {
             viewport={{ amount: 'some', margin: '100% 0% -9% 0%' }}
             className='flex justify-center -mt-0.5'
           >
-            <hr className='bg-[#9d5746] border-none h-[0.2rem] w-20 sm:w-20 rounded-xl' />
+            <hr className='bg-[#9d5746] border-none h-[0.2rem] w-32 sm:w-48 rounded-xl' />
           </motion.div>
         </div>
 
@@ -82,7 +82,7 @@ const Projects = () => {
           )}
 
           {/* Show More button */}
-          <div
+          {/* <div
             className={`relative h-16 flex justify-center items-center bg-white`}
           >
             <div
@@ -108,7 +108,7 @@ const Projects = () => {
                 )}
               </motion.div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

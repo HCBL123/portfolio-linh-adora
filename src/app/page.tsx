@@ -14,7 +14,7 @@ export default function Home() {
       <About />
       <Stats />
       <Projects />
-      <SocialMedia />
+      {/* <SocialMedia /> */}
       <Footer />
     </>
   );

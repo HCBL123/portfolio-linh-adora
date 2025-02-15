@@ -16,9 +16,9 @@ export const QUIET_NODE_PORTFOLIO_V2_GITHUB_LINK =
 export const QUIET_NODE_GITHUB_LINK = 'https://github.com/quiet-node';
 export const QUIET_NODE_REDDIT_LINK =
   'https://www.reddit.com/user/Quiet-Computer-3495';
-export const QUIET_NODE_EMAIL_LINK = 'mailto:logan@quiet-node.dev';
-export const QUIET_NODE_LINKEDIN_LINK = 'https://linkedin.com/in/logann131';
-export const QUIET_NODE_TWITTER_LINK = 'https://twitter.com/quiet_node';
+export const QUIET_NODE_EMAIL_LINK = 'mailto:nglinh@aseanyouth.net';
+export const QUIET_NODE_LINKEDIN_LINK = 'https://www.linkedin.com/in/linh-g-nguyen-b498b9350/';
+export const QUIET_NODE_TWITTER_LINK = 'https://www.instagram.com/_twinklelittlemoon_/';
 export const QUIET_NODE_DISCORD_LINK =
   'https://discordapp.com/users/401650245202739201';
 
@@ -204,78 +204,54 @@ export const MORE_SKILLS_LISTS: Technology[] = [
 
 export const PROJECTS_LISTS: Project[] = [
   {
-    id: 0,
-    title: 'Syns Platform',
+    id: 1,
+    title: 'AquaEmi',
     stacks: {
-      FE: [
+      FE: [],
+      BE: [],
+      Hardwares: [
         {
-          technology: 'TypeScript',
-          techLink: TS_LINK,
+          technology: 'MQTT',
+          techLink: 'https://mqtt.org/',
           shouldShake: false,
         },
         {
-          technology: 'NextJS',
-          techLink: NEXT_LINK,
+          technology: 'Arduino',
+          techLink: 'https://www.arduino.cc/',
           shouldShake: false,
         },
         {
-          technology: 'ReactJS',
-          techLink: REACT_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'TailwindCSS',
-          techLink: TAILWIND_LINK,
+          technology: 'ESP32',
+          techLink: 'https://www.espressif.com/',
           shouldShake: false,
         },
       ],
-      BC: [
+      Libraries: [
         {
-          technology: 'Ethereum',
-          techLink: ETHEREUM_LINK,
+          technology: 'Python',
+          techLink: 'https://www.python.org/',
           shouldShake: false,
         },
         {
-          technology: 'Polygon',
-          techLink: POLYGON_LINK,
+          technology: 'Jupyter',
+          techLink: 'https://jupyter.org/',
           shouldShake: false,
         },
         {
-          technology: 'Solidity',
-          techLink: SOL_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'OpenZeppelin',
-          techLink: OZ_LINK,
+          technology: 'Pandas',
+          techLink: 'https://pandas.pydata.org/',
           shouldShake: false,
         },
       ],
-      BE: [
-        {
-          technology: 'Golang',
-          techLink: GO_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'MongoDB',
-          techLink: MONGO_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'Vercel',
-          techLink: VERCEL_LINK,
-          shouldShake: false,
-        },
-      ],
+      BC: [],
       Mobile: [],
     },
     description:
-      'A revolutionary web 3.0 music platform that combines NFTs, music-donation system, NFT marketplace, club membership, and social media features, empowering musicians and fans to connect, showcase, and promote their music, revolutionizing the music industry.',
-    repoLink: 'https://github.com/syns-platform',
-    liveLink: 'https://syns.vercel.app',
+      'Developed AquaEmi for the Mekong River, addressing critical water pollution affecting public health and ecosystems: Designed an ARIMA-based predictive model to forecast key water quality parameters (pH, oxygen levels, pollutants) with a Mean Absolute Percentage Error (MAPE) of 8.6%, enabling early detection of contamination risks.',
+    repoLink: 'https://github.com/aquaemi/Web',
+    liveLink: '',
     demoLink: '',
-    thumbnail: 'syns-platform/syns-platform-devices.svg',
+    thumbnail: 'aquaemi/aquaemi.svg',
     cssWrapper: 'syns-platform',
     cssWrapperSm: 'syns-platform-sm',
     cssDesc: 'syns-platform-desc',
@@ -283,111 +259,44 @@ export const PROJECTS_LISTS: Project[] = [
     cssUnderline: 'syns-platform-underline',
   },
   {
-    id: 1,
-    title: 'Hedro.ai',
+    id: 2,
+    title: 'AI-Powered Diagnostic Ultra-Sensitive Respiratory Magnetic Sensor Technology',
     stacks: {
-      FE: [
+      FE: [],
+      BE: [],
+      Models: [
         {
-          technology: 'TypeScript',
-          techLink: TS_LINK,
+          technology: 'Python',
+          techLink: 'https://www.python.org/',
           shouldShake: false,
         },
         {
-          technology: 'NextJS',
-          techLink: NEXT_LINK,
+          technology: 'TensorFlow',
+          techLink: 'https://www.tensorflow.org/',
+          shouldShake: false,
+        },
+      ],
+      Analytics: [
+        {
+          technology: 'scikit-learn',
+          techLink: 'https://scikit-learn.org/',
           shouldShake: false,
         },
         {
-          technology: 'ReactJS',
-          techLink: REACT_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'TailwindCSS',
-          techLink: TAILWIND_LINK,
+          technology: 'Pandas',
+          techLink: 'https://pandas.pydata.org/',
           shouldShake: false,
         },
       ],
       BC: [],
-      BE: [
-        {
-          technology: 'OpenAI',
-          techLink: OPENAI_LINK,
-          shouldShake: false,
-        },
-      ],
       Mobile: [],
     },
     description:
-      'A helpful GPT-3.5-turbo-powered-assistant whose main goal is to guide users to explore the ecosystem of the Hedera network',
-    repoLink: 'https://github.com/quiet-node/hedro-ai',
-    liveLink: 'https://hedro-ai.vercel.app',
+      'Developed and optimized machine learning models to classify respiratory signal data with 90% diagnostic accuracy, supporting the screening of respiratory diseases (COVID-19, COPD). Collected and analyzed respiratory signal data from 300+ patients, ensuring precision and integrity throughout the data pipeline; Created an initial version of a patient-facing platform with future potential for Electronic Medical Records (EMR) integration',
+    repoLink: '',
+    liveLink: '',
     demoLink: '',
-    thumbnail: 'hedro-ai/hedro-ai.svg',
-    cssWrapper: 'hedro-ai',
-    cssWrapperSm: 'hedro-ai-sm',
-    cssDesc: 'hedro-ai-desc',
-    cssBtn: 'hedro-ai-btn',
-    cssUnderline: 'hedro-ai-underline',
-  },
-  {
-    id: 2,
-    title: 'Hedera System Contract DApp Playground',
-    stacks: {
-      FE: [
-        {
-          technology: 'TypeScript',
-          techLink: TS_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'NextJS',
-          techLink: NEXT_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'ReactJS',
-          techLink: REACT_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'TailwindCSS',
-          techLink: TAILWIND_LINK,
-          shouldShake: false,
-        },
-      ],
-      BC: [
-        {
-          technology: 'Hedera',
-          techLink: HEDERA_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'Solidity',
-          techLink: SOL_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'Hardhat',
-          techLink: HARDHAT_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'ethersjs',
-          techLink: ETHERSJS_LINK,
-          shouldShake: false,
-        },
-      ],
-      BE: [],
-      Mobile: [],
-    },
-    description:
-      'An intuitive low-code playground that eliminates the complexities, reduces learning curves, and allows developers to effortlessly interact with the Hedera’s powerful system contracts.',
-    repoLink:
-      'https://github.com/hashgraph/hedera-smart-contracts/tree/main/system-contract-dapp-playground',
-    liveLink: 'https://hedera-dapp-playground.vercel.app/',
-    demoLink: '',
-    thumbnail: 'hedera-dapp-playground/hedera-dapp-playground.svg',
+    thumbnail: 'respiratory-sensor/respiratory-sensor.svg',
     cssWrapper: 'hedera-dapp-playground',
     cssWrapperSm: 'hedera-dapp-playground-sm',
     cssDesc: 'hedera-dapp-playground-desc',
@@ -396,67 +305,19 @@ export const PROJECTS_LISTS: Project[] = [
   },
   {
     id: 3,
-    title: 'Hashtology',
+    title: 'Boston Global Forum - Event Organizer\'s Assistant',
     stacks: {
-      FE: [
-        {
-          technology: 'TypeScript',
-          techLink: TS_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'ReactJS',
-          techLink: REACT_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'ViteJS',
-          techLink: VITE_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'TailwindCSS',
-          techLink: TAILWIND_LINK,
-          shouldShake: false,
-        },
-      ],
-      BC: [
-        {
-          technology: 'Ethereum',
-          techLink: ETHEREUM_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'Polygon',
-          techLink: POLYGON_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'Solidity',
-          techLink: SOL_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'Hardhat',
-          techLink: HARDHAT_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'MochaJS',
-          techLink: MOCHA_LINK,
-          shouldShake: false,
-        },
-      ],
+      FE: [],
       BE: [],
+      BC: [],
       Mobile: [],
     },
-
     description:
-      'A crypto-wallet that simplifies the process of sending and receiving various digital currencies across the globe, provides a secure and reliable way to manage your digital assets.',
-    repoLink: `${QUIET_NODE_GITHUB_LINK}/hashtology-dapp`,
+      'Coordinated 230 guest lists and correspondence for high-profile global events.\n\nManaged correspondence and sent personalized invitations to distinguished attendees.\n\nHonored to help organize an event featuring distinguished attendees, including the President of France, Ministers of Taiwan, the Governor of Massachusetts, and members of the U.S. Congress.',
+    repoLink: '', // Empty string will hide the Github button
     liveLink: '',
-    demoLink: `${QUIET_NODE_GITHUB_LINK}/hashtology-dapp#desktop`,
-    thumbnail: 'hashtology/hashtology.svg',
+    demoLink: '',
+    thumbnail: 'bgf/bgf.svg',
     cssWrapper: 'hashtology',
     cssWrapperSm: 'hashtology-sm',
     cssDesc: 'hashtology-desc',
@@ -465,89 +326,40 @@ export const PROJECTS_LISTS: Project[] = [
   },
   {
     id: 4,
-    title: 'NFTir',
+    title: 'ASEAN Youth Organization (AYO) Core member in Technology Track',
     stacks: {
       FE: [],
+      BE: [],
       BC: [],
-      BE: [
-        {
-          technology: 'Golang',
-          techLink: GO_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'AWS',
-          techLink: AWS_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'DynamoDB',
-          techLink: DYNAMO_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'Docker',
-          techLink: DOCKER_LINK,
-          shouldShake: false,
-        },
-      ],
       Mobile: [],
     },
     description:
-      'A Golang-based application server, boasts a plethora of RESTful endpoints that facilitate the efficient processing and management of metadata and information pertaining to specific NFTs through the utilization of the NFTGo API.',
-    repoLink: `https://github.com/nftir`,
+      'Collaborate with a team on web development projects, creating a user-friendly platform for community engagement and resource sharing and enhancing public access to technology tools.\n\nDeveloped problem-solving and technical expertise by building and managing websites, experiences that translate into creating tools for healthcare and global health advancements in the future.',
+    repoLink: '',
     liveLink: '',
     demoLink: '',
-    thumbnail: 'nftir/nftir.svg',
+    thumbnail: 'ayo/ayo.svg',
     cssWrapper: 'nftir',
     cssWrapperSm: 'nftir-sm',
     cssDesc: 'nftir-desc',
     cssBtn: 'nftir-btn',
     cssUnderline: 'nftir-underline',
   },
-
   {
     id: 5,
-    title: 'Calibrated Peer Review',
+    title: 'FPT Software Computer Talents Club Member & Track Leader',
     stacks: {
-      FE: [
-        {
-          technology: 'ReactJS',
-          techLink: REACT_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'JavaScript',
-          techLink: JS_LINK,
-          shouldShake: false,
-        },
-      ],
+      FE: [],
+      BE: [],
       BC: [],
-      BE: [
-        {
-          technology: 'Java',
-          techLink: JAVA_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'OpenLiberty',
-          techLink: OL_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'Docker',
-          techLink: DOCKER_LINK,
-          shouldShake: false,
-        },
-      ],
       Mobile: [],
     },
     description:
-      'A full-stack web application aimed at bringing automated calibrated peer review to classrooms at SUNY Oswego.',
-    repoLink: `https://github.com/tenbergen/CSC480-22S`,
-    liveLink: 'http://moxie.cs.oswego.edu:13125/',
+      'Collaborated with team members on coding challenges and hackathons, achieving Third prize in the 2022 FCTClub Hackathon during FCTClub Summer Camp.\n\nWon the title of "Best Learner of the Year" and "Outstanding Learner of the Year" for 2 consecutive years, received 100% scholarship from FPT Software Academy, demonstrating exceptional performance and dedication.',
+    repoLink: '',
+    liveLink: '',
     demoLink: '',
-    thumbnail: 'cproswego/cpr.svg',
+    thumbnail: 'fpt/fpt.svg',
     cssWrapper: 'cpr',
     cssWrapperSm: 'cpr-sm',
     cssDesc: 'cpr-desc',
@@ -556,56 +368,24 @@ export const PROJECTS_LISTS: Project[] = [
   },
   {
     id: 6,
-    title: 'Meetup App',
+    title: "SOS Children's Village Vietnam English Teacher Leader",
     stacks: {
-      FE: [
-        {
-          technology: 'ReactJS',
-          techLink: REACT_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'JavaScript',
-          techLink: JS_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'Redux',
-          techLink: REDUX_LINK,
-          shouldShake: false,
-        },
-      ],
+      FE: [],
+      BE: [],
       BC: [],
-      BE: [
-        {
-          technology: 'NodeJs',
-          techLink: NODE_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'JavaScript',
-          techLink: JS_LINK,
-          shouldShake: false,
-        },
-        {
-          technology: 'MongoDB',
-          techLink: MONGO_LINK,
-          shouldShake: false,
-        },
-      ],
       Mobile: [],
     },
     description:
-      'A social platform enables them to connect and create a portfolio that showcases their professional career, including their experience, education, skills, and other pertinent information.',
-    repoLink: `${QUIET_NODE_GITHUB_LINK}/meetup-app`,
-    liveLink: 'https://serene-retreat-94411.herokuapp.com/',
+      "Provided personalized English tutoring to orphaned children, improving literacy and confidence in communication among 15+ students.\n\nLearned the value of patience and empathy, qualities that deeply inform my approach to developing user-friendly and impactful solutions for underserved populations.",
+    repoLink: '',
+    liveLink: '',
     demoLink: '',
-    thumbnail: 'meetup-app/meetup-app.svg',
-    cssWrapper: 'meetup',
-    cssWrapperSm: 'meetup-sm',
-    cssDesc: 'meetup-desc',
-    cssBtn: 'meetup-btn',
-    cssUnderline: 'meetup-underline',
+    thumbnail: 'sos/sos.svg',
+    cssWrapper: 'sos',
+    cssWrapperSm: 'sos-sm',
+    cssDesc: 'sos-desc',
+    cssBtn: 'sos-btn',
+    cssUnderline: 'sos-underline',
   },
   {
     id: 7,
