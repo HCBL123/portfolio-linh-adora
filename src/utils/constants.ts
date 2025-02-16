@@ -13,7 +13,7 @@ export const OFFICIAL_TWITTER_IMAGE_URL = `${OFFICIAL_AUTHOR_URL}/brandings/quie
 export const QUIET_NODE_PORTFOLIO_V2_GITHUB_LINK =
   'https://github.com/quiet-node/portfolio-v2';
 
-export const QUIET_NODE_GITHUB_LINK = 'https://github.com/quiet-node';
+export const QUIET_NODE_GITHUB_LINK = 'https://github.com/LinkAdora';
 export const QUIET_NODE_REDDIT_LINK =
   'https://www.reddit.com/user/Quiet-Computer-3495';
 export const QUIET_NODE_EMAIL_LINK = 'mailto:nglinh@aseanyouth.net';
