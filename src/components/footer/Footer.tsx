@@ -103,7 +103,7 @@ const Footer = () => {
             </span>
           </SmotionDiv>
           {/* Star this project */}
-          <motion.div variants={verticalVariants}>
+          {/* <motion.div variants={verticalVariants}>
             <SmotionLink
               href={QUIET_NODE_PORTFOLIO_V2_GITHUB_LINK}
               target='_blank'
@@ -113,7 +113,7 @@ const Footer = () => {
                 <BsGithub />
               </div>
             </SmotionLink>
-          </motion.div>
+          </motion.div> */}
 
           {/* Copyright */}
           <motion.div

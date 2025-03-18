@@ -28,22 +28,22 @@ export default function RootLayout({
 }
 
 export const metadata: Metadata = {
-  title: 'Quiet Node | Portfolio',
+  title: 'Linh Adora | Portfolio',
   description:
     'Full-stack Web 3.0 Software Developer | DLT Enthusiast | Junior Smart Contract Developer',
   authors: {
-    name: 'Logan (a.k.a. Quiet Node)',
+    name: 'Gia Linh (a.k.a. Linh Adora)',
     url: OFFICIAL_PLATOFORM_TWITTER_URL,
   },
   keywords: [
-    'Logan',
-    'Logann131',
-    'Quiet Node',
-    'Quiet0Node',
-    'Portfolio',
-    'Web 3.0 Developer portfolio',
-    'Full-stack software developer portfolio',
-    'smart contract developer portfolio',
+    // 'Logan',
+    // 'Logann131',
+    // 'Quiet Node',
+    // 'Quiet0Node',
+    // 'Portfolio',
+    // 'Web 3.0 Developer portfolio',
+    // 'Full-stack software developer portfolio',
+    // 'smart contract developer portfolio',
   ],
   icons: {
     icon: '/quiet-node.ico',
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
 
   // ######## OG ########
   openGraph: {
-    siteName: "Quiet Node's Portfolio",
-    title: 'Quiet Node | Portfolio',
+    siteName: "Linh Adora's Portfolio",
+    title: 'Linh Adora | Portfolio',
     description:
       'Full-stack Web 3.0 Software Developer | DLT Enthusiast | Junior Smart Contract Developer',
     locale: 'en_US',
