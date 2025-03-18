@@ -130,12 +130,18 @@ const Intro = () => {
               viewport={{ once: true }}
               whileHover={{ y: -0.5 }}
               transition={{ duration: 0.6, delay: 1.1 }}
-              href={QUIET_NODE_TWITTER_LINK}
+              href={`https://www.instagram.com/_twinklelittlemoon_/`}
               target='_blank'
               className='cursor-pointer hover:text-[#1DA1F2]'
-              title='Twitter'
+              title='instagram'
             >
-              <AiFillTwitterCircle />
+              <Image 
+                src="/assets/avatars/ins_icon.png"
+                alt="Instagram"
+                width={48}
+                height={48}
+                className="object-contain"
+              />
             </SmotionLink>
             <SmotionLink
               initial={{ opacity: 0, x: 21 }}

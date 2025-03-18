@@ -59,9 +59,9 @@ const Projects = () => {
           {PROJECTS_LISTS.slice(0, 5).map((project) => {
             return (
               <ProjectTile
-                key={project.id}
-                project={project}
-                flipped={project.id % 2 !== 0}
+              key={project.id}
+              project={project}
+              flipped={project.id % 2 !== 0}
               />
             );
           })}

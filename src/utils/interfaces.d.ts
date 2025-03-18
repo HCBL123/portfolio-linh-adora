@@ -1,33 +1,41 @@
 interface Project {
   id: number;
   title: string;
-  stacks: ProjectStack;
-  description: string;
-  repoLink: string;
-  liveLink: string;
-  demoLink: string;
+  role: string;
+  supervisors: string[];
+  publications: Publication[];
+  achievements: Achievement[];
+  tools: Technology[];
   thumbnail: string;
-  cssWrapper: string;
-  cssWrapperSm: string;
-  cssDesc: string;
-  cssBtn: string;
-  cssUnderline: string;
+  cssStyles: CSSStyles;
 }
 
-interface ProjectStack {
-  FE: ProjectTechs[];
-  BC: ProjectTechs[];
-  BE: ProjectTechs[];
-  Mobile: ProjectTechs[];
-  Libraries?: Technology[];
-  Hardwares?: Technology[];
-  Models?: Technology[];
-  Analytics?: Technology[];
+interface Publication {
+  title: string;
+  publisher: string;
+  link: string;
+  year: number;
+}
+
+interface Achievement {
+  title: string;
+  description: string;
+  grantor?: string;
 }
 
 interface Technology {
-  technology: string;
-  value?: number;
-  techLink: string;
-  shouldShake: boolean;
+  name: string;
+  link: string;
+  icon: string;
+}
+
+interface CSSStyles {
+  wrapper: string;
+  title: string;
+  content: string;
+  links: string;
+}
+interface ProjectTileProps {
+  project: Project;
+  flipped: boolean;
 }
