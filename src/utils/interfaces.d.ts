@@ -8,6 +8,7 @@ interface Project {
   tools: Technology[];
   thumbnail: string;
   cssStyles: CSSStyles;
+  category: 'research' | 'development' | 'design';
 }
 
 interface Publication {

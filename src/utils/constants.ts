@@ -67,6 +67,7 @@ export const PROJECTS_LISTS: Project[] = [
     id: 1,
     title: 'University of South Florida - Laboratory for Advanced Materials and Sensor Technologies',
     role: 'Research Assistant & Intern',
+    category: 'research',
     supervisors: [
       'Professor Manh-Huong Phan',
       'Professor Dang H. Nguyen',
@@ -76,19 +77,19 @@ export const PROJECTS_LISTS: Project[] = [
       {
         title: 'A Novel Magnetic Respiratory Sensor for Human Healthcare',
         publisher: 'MDPI',
-        link: 'https://www.mdpi.com/paper/1',
+        link: 'https://www.mdpi.com/2076-3417/11/8/3585',
         year: 2023
       },
       {
         title: 'Magnetoimpedance Biosensors and Real-Time Healthcare Monitors',
         publisher: 'MDPI',
-        link: 'https://www.mdpi.com/paper/2',
+        link: 'https://www.mdpi.com/2079-6374/12/7/517',
         year: 2023
       },
       {
         title: 'Sensitivity Analysis and Parameter Exploration',
         publisher: 'BMES',
-        link: 'https://www.bmes.org/paper',
+        link: 'https://drive.google.com/file/d/1ezaAktVRgR22svSFgJ6WopqeZxxJ6g55/view',
         year: 2023
       }
     ],
@@ -113,6 +114,7 @@ export const PROJECTS_LISTS: Project[] = [
     id: 2,
     title: 'FPT Software Computer Talents Club',
     role: 'Track Leader & Python Developer Intern',
+    category: 'development',
     supervisors: [],
     publications: [],
     achievements: [
@@ -166,6 +168,7 @@ export const PROJECTS_LISTS: Project[] = [
     id: 3,
     title: 'BotBrainiacs Robotics Club',
     role: 'Workshop Organizer & Technical Instructor',
+    category: 'development',
     supervisors: [],
     publications: [],
     achievements: [
@@ -202,8 +205,9 @@ export const PROJECTS_LISTS: Project[] = [
   },
   {
     id: 4,
-    title: 'ASEAN Youth Organization (AYO)',
-    role: 'Core Member - Technology Track',
+    title: 'ASEAN Youth Organization',
+    role: 'Technical Lead & Developer',
+    category: 'development',
     supervisors: [],
     publications: [],
     achievements: [
@@ -252,6 +256,7 @@ export const PROJECTS_LISTS: Project[] = [
     id: 5,
     title: "SOS Children's Village Vietnam",
     role: 'English Teacher Leader',
+    category: 'development',
     supervisors: [],
     publications: [],
     achievements: [
@@ -273,7 +278,7 @@ export const PROJECTS_LISTS: Project[] = [
       //   icon: 'teaching.svg'
       // }
     ],
-    thumbnail: 'sos/sos-village.svg',
+    thumbnail: 'sos/sos-village.jpg',
     cssStyles: {
       wrapper: 'bg-gradient-to-br from-amber-50 to-orange-50 p-6 rounded-xl shadow-lg',
       title: 'text-2xl font-bold text-gray-800 mb-4',
